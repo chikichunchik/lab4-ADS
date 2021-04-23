@@ -6,10 +6,10 @@ public class Main {
         long startTime;
 
         startTime = System.currentTimeMillis();
-        for(int i = 0; i < 10000; i++){
+        for(int i = 0; i < 100000; i++){
             test.add(i);
         }
-        System.out.println("Time to add 10000 elements: " + (System.currentTimeMillis() - startTime) + " ms" );
+        System.out.println("Time to add 100000 elements: " + (System.currentTimeMillis() - startTime) + " ms" );
 
         startTime = System.currentTimeMillis();
         test.add(-1);
@@ -17,7 +17,7 @@ public class Main {
                 + (System.currentTimeMillis() - startTime) + " ms" );
 
         startTime = System.currentTimeMillis();
-        test.add(10000);
+        test.add(100000);
         System.out.println("Time to add element to the top of tree: "
                 + (System.currentTimeMillis() - startTime) + " ms" );
 
@@ -27,12 +27,12 @@ public class Main {
                 + (System.currentTimeMillis() - startTime) + " ms" );
 
         startTime = System.currentTimeMillis();
-        test.remove(10000);
+        test.remove(100000);
         System.out.println("Time to delete element from the top of tree: "
                 + (System.currentTimeMillis() - startTime) + " ms" );
 
         startTime = System.currentTimeMillis();
-        test.find(9999);
+        test.find(99999);
         System.out.println("Time to find element in the top of tree: "
                 + (System.currentTimeMillis() - startTime) + " ms" );
 
